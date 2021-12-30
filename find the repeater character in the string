@@ -1,0 +1,19 @@
+//program below to print the string value till the first letter of the sting is repeated
+//eg:everest so ev is printed.
+#include <stdio.h>
+#include <string.h>
+int main(){
+char s[100];
+
+int index=0;
+
+scanf("%s",s);
+for(int i=0;s[i]!='\0';i++)
+{
+if(s[0]==s[i])
+index++;
+else
+break;
+}
+s[index]='\0';
+printf("%s",s[index]];
