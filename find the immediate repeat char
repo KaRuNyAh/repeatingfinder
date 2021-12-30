@@ -14,8 +14,8 @@ for(int i=0;s[i]!='\0';i++)
     {
        if(s[i]==s[j]) //here just we need to find the sudden repeating character(lowest index)
        {
-        if(j<a)//if j is less than a then it valued stored to j if not leave it
-           a=j;
+        if(j<a)//if j is less than a then it valued stored to j if not leave it,this means the l,e,p is repeated in this grp only p is the immediate repeat means it repeat again in few distance from the first occuring so hence p is the sudden repeat than l and e.
+           a=j;//while l come first the next l occur at 8 th index so j=8;so 8<30 ;in e case next index occur at 9th where 9<8 not statisfied so again a=8 only;now check p where j=7 so 7<8 where s[j]=p satisfied;
        }
     }
 }
